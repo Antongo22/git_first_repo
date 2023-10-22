@@ -13,16 +13,3 @@ class Manager:
         tax_rate = 0.13
         taxes = earnings_without_bonus * tax_rate
         return taxes
-
-
-hourly_rate = 20
-bonus_percentage = 10
-
-days_worked = 5
-
-manager = Manager(hourly_rate, bonus_percentage)
-earnings = manager.earnings_for_days(days_worked)
-taxes = manager.taxes_for_days(days_worked)
-
-print(f"Заработок за {days_worked} дней: ${earnings}")
-print(f"Налоги за {days_worked} дней (13%): ${taxes}")
